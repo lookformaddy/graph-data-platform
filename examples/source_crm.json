@@ -1,0 +1,282 @@
+{
+  "nodes": [
+    {
+      "id": "acc-initech",
+      "type": "account",
+      "properties": {
+        "name": "Initech LLC billing account"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "acc-globex",
+      "type": "account",
+      "properties": {
+        "name": "Globex Inc billing account"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "org-umbrella",
+      "type": "organization",
+      "properties": {
+        "name": "Umbrella Co",
+        "domain": "umbrella.example.com",
+        "city": "Raccoon City"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "per-elsa",
+      "type": "person",
+      "properties": {
+        "name": "Elsa Novak",
+        "email": "elsa.novak@umbrella.example.com",
+        "city": "Springfield"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "per-ana",
+      "type": "person",
+      "properties": {
+        "name": "Ana Ruiz",
+        "email": "ana.ruiz@acme.example.com",
+        "city": "Springfield"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "per-cleo",
+      "type": "person",
+      "properties": {
+        "name": "Cleo Tanaka",
+        "email": "cleo.tanaka@initech.example.com",
+        "city": "Springfield"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "per-bad",
+      "type": "person",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "per-ben",
+      "type": "person",
+      "properties": {
+        "name": "Ben Okafor",
+        "email": "ben.okafor@globex.example.com",
+        "city": "Springfield"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "per-finn",
+      "type": "person",
+      "properties": {
+        "name": "Finn Gallagher",
+        "email": "finn.gallagher@acme.example.com",
+        "city": "Springfield"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "acc-umbrella",
+      "type": "account",
+      "properties": {
+        "name": "Umbrella Co billing account"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "org-globex",
+      "type": "organization",
+      "properties": {
+        "name": "Globex Inc",
+        "domain": "globex.example.com",
+        "city": "Shelbyville"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "acc-acme",
+      "type": "account",
+      "properties": {
+        "name": "Acme Corp billing account"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "org-initech",
+      "type": "organization",
+      "properties": {
+        "name": "Initech LLC",
+        "domain": "initech.example.com",
+        "city": "Capital City"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "acc-hooli",
+      "type": "account",
+      "properties": {
+        "name": "Hooli billing account"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "bad-type",
+      "type": "spaceship",
+      "properties": {
+        "name": "X"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "per-dan",
+      "type": "person",
+      "properties": {
+        "name": "Dan Petrov",
+        "email": "dan.petrov@hooli.example.com",
+        "city": "Springfield"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "org-acme",
+      "type": "organization",
+      "properties": {
+        "name": "Acme Corp",
+        "domain": "acme.example.com",
+        "city": "Springfield"
+      },
+      "source": "crm"
+    },
+    {
+      "id": "org-hooli",
+      "type": "organization",
+      "properties": {
+        "name": "Hooli",
+        "domain": "hooli.example.com",
+        "city": "Palo Alto"
+      },
+      "source": "crm"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-per-finn-works",
+      "type": "works_at",
+      "source_id": "per-finn",
+      "target_id": "org-acme",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-per-ben-works",
+      "type": "works_at",
+      "source_id": "per-ben",
+      "target_id": "org-globex",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-acc-globex-owns",
+      "type": "owns",
+      "source_id": "org-globex",
+      "target_id": "acc-globex",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-per-ana-works",
+      "type": "works_at",
+      "source_id": "per-ana",
+      "target_id": "org-acme",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-per-cleo-works",
+      "type": "works_at",
+      "source_id": "per-cleo",
+      "target_id": "org-initech",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-per-elsa-works",
+      "type": "works_at",
+      "source_id": "per-elsa",
+      "target_id": "org-umbrella",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-ben-reports",
+      "type": "reports_to",
+      "source_id": "per-ben",
+      "target_id": "per-ana",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-acc-umbrella-owns",
+      "type": "owns",
+      "source_id": "org-umbrella",
+      "target_id": "acc-umbrella",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-finn-reports",
+      "type": "reports_to",
+      "source_id": "per-finn",
+      "target_id": "per-ana",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-dangling",
+      "type": "works_at",
+      "source_id": "per-ghost",
+      "target_id": "org-acme",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-acc-initech-owns",
+      "type": "owns",
+      "source_id": "org-initech",
+      "target_id": "acc-initech",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-acc-hooli-owns",
+      "type": "owns",
+      "source_id": "org-hooli",
+      "target_id": "acc-hooli",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-per-dan-works",
+      "type": "works_at",
+      "source_id": "per-dan",
+      "target_id": "org-hooli",
+      "properties": {},
+      "source": "crm"
+    },
+    {
+      "id": "e-acc-acme-owns",
+      "type": "owns",
+      "source_id": "org-acme",
+      "target_id": "acc-acme",
+      "properties": {},
+      "source": "crm"
+    }
+  ]
+}

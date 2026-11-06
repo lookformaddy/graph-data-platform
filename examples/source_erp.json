@@ -1,0 +1,209 @@
+{
+  "nodes": [
+    {
+      "id": "prod-gizmo",
+      "type": "product",
+      "properties": {
+        "name": "Gizmo Ultra",
+        "sku": "PROD-GIZMO"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "loc-0",
+      "type": "location",
+      "properties": {
+        "name": "Springfield depot",
+        "city": "Springfield"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "loc-1",
+      "type": "location",
+      "properties": {
+        "name": "Shelbyville depot",
+        "city": "Shelbyville"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "loc-4",
+      "type": "location",
+      "properties": {
+        "name": "Raccoon City depot",
+        "city": "Raccoon City"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "prod-gadget",
+      "type": "product",
+      "properties": {
+        "name": "Gadget Max",
+        "sku": "PROD-GADGET"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "loc-3",
+      "type": "location",
+      "properties": {
+        "name": "Palo Alto depot",
+        "city": "Palo Alto"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "org-hooli",
+      "type": "organization",
+      "properties": {
+        "name": "Hooli",
+        "domain": "hooli.example.com",
+        "city": "Palo Alto"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "org-globex-erp",
+      "type": "organization",
+      "properties": {
+        "name": "Globex Corporation",
+        "domain": "globex.example.com",
+        "city": "Shelbyville"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "prod-widget",
+      "type": "product",
+      "properties": {
+        "name": "Widget Pro",
+        "sku": "PROD-WIDGET"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "prod-doodad",
+      "type": "product",
+      "properties": {
+        "name": "Doodad Lite",
+        "sku": "PROD-DOODAD"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "org-initech-erp",
+      "type": "organization",
+      "properties": {
+        "name": "Initech",
+        "domain": "initech.example.com",
+        "city": "Capital City"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "loc-2",
+      "type": "location",
+      "properties": {
+        "name": "Capital City depot",
+        "city": "Capital City"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "org-umbrella",
+      "type": "organization",
+      "properties": {
+        "name": "Umbrella Co",
+        "domain": "umbrella.example.com",
+        "city": "Raccoon City"
+      },
+      "source": "erp"
+    },
+    {
+      "id": "org-acme-erp",
+      "type": "organization",
+      "properties": {
+        "name": "Acme Corporation",
+        "domain": "acme.example.com",
+        "city": "Springfield"
+      },
+      "source": "erp"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-prod-doodad-supplies",
+      "type": "supplies",
+      "source_id": "org-initech-erp",
+      "target_id": "prod-doodad",
+      "properties": {},
+      "source": "erp"
+    },
+    {
+      "id": "e-org-umbrella-located",
+      "type": "located_in",
+      "source_id": "org-umbrella",
+      "target_id": "loc-4",
+      "properties": {},
+      "source": "erp"
+    },
+    {
+      "id": "e-org-hooli-located",
+      "type": "located_in",
+      "source_id": "org-hooli",
+      "target_id": "loc-3",
+      "properties": {},
+      "source": "erp"
+    },
+    {
+      "id": "e-org-acme-erp-located",
+      "type": "located_in",
+      "source_id": "org-acme-erp",
+      "target_id": "loc-0",
+      "properties": {},
+      "source": "erp"
+    },
+    {
+      "id": "e-prod-widget-supplies",
+      "type": "supplies",
+      "source_id": "org-acme-erp",
+      "target_id": "prod-widget",
+      "properties": {},
+      "source": "erp"
+    },
+    {
+      "id": "e-prod-gadget-supplies",
+      "type": "supplies",
+      "source_id": "org-globex-erp",
+      "target_id": "prod-gadget",
+      "properties": {},
+      "source": "erp"
+    },
+    {
+      "id": "e-prod-gizmo-supplies",
+      "type": "supplies",
+      "source_id": "org-hooli",
+      "target_id": "prod-gizmo",
+      "properties": {},
+      "source": "erp"
+    },
+    {
+      "id": "e-org-initech-erp-located",
+      "type": "located_in",
+      "source_id": "org-initech-erp",
+      "target_id": "loc-2",
+      "properties": {},
+      "source": "erp"
+    },
+    {
+      "id": "e-org-globex-erp-located",
+      "type": "located_in",
+      "source_id": "org-globex-erp",
+      "target_id": "loc-1",
+      "properties": {},
+      "source": "erp"
+    }
+  ]
+}
